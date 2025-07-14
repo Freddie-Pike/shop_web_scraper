@@ -11,6 +11,7 @@ const { test, expect } = require('@playwright/test');
 
   await expect(page.getByText('ACCEPT')).toHaveText("ACCEPT")
   const acceptButton = page.getByText('ACCEPT');
+  // This triggers exception as "ACCEPT" is not defined on page yet.
   acceptButton.press()
 
   shakeButton = page.getByText('Pick One to Shake');
