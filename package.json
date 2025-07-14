@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "scrape": "node scraping.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Freddie-Pike/shop_web_scraper.git"
